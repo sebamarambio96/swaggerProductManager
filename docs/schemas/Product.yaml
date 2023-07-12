@@ -21,8 +21,24 @@ components:
         thumbnail:
           type: string
           description: The URL of the product thumbnail.
+        description:
+          type: string
+          description: The product description.
+        code:
+          type: string
+          description: SKU of the product.
+        stock:
+          type: number
+          description: Amount of the product.
+        category:
+          type: string
+          description: The URL of the product stock.
+
       example:
-         id: 4ughd7-3658fn-sk85d-h58sk
-         title: desktop computer
-         price: 123.78
-         thumbnail: http://photo.url.png
+        id: "645039f2c3f328ae90ac008a"
+        title: "producto prueba creado"
+        description: "Este es un producto prueba"
+        price: 300
+        thumbnail: "11asda12312.jpg"
+        code: "612312434"
+        stock: 25
