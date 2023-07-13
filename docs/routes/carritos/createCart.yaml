@@ -1,9 +1,9 @@
 paths:
-  /api/products:
+  /api/carts/:cid/product/:pid:
     post:
       summary: Creates a new product
       tags:
-        - Productos
+        - Carrito
       requestBody:
         required: true
         content:

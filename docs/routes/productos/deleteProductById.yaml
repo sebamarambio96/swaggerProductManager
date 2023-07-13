@@ -1,7 +1,7 @@
 paths:
   /api/products/{pid}:
-    get:
-      summary: Gets the product with given pid
+    delete:
+      summary: Delete the product with given pid
       tags:
         - Productos
       parameters:
@@ -11,7 +11,7 @@ paths:
         required: true
         type: string
       responses:
-        "200":
+        "204":
           description: The product with given pid
           content:
             application/json:

@@ -24,7 +24,7 @@ const express = require('express')
 
 const app = express()
 
-app.get('/productos', (req, res, next) => {
+app.get('/api/products', (req, res, next) => {
   res.json([])
 })
 

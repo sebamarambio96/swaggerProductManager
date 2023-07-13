@@ -1,19 +1,11 @@
-# Product
+# UpdateProduct
 components:
-  schemas:
-    Product:
+  requestBodies:
+    UpdateProduct:
       type: object
       required:
-        - title
-        - price
-        - code
-        - description
-        - stock
-        - category
+        - pid
       properties:
-        id:
-          type: string
-          description: The auto-generated id of the product.
         title:
           type: string
           description: The title of the product.
@@ -35,12 +27,10 @@ components:
         category:
           type: string
           description: The URL of the product stock.
-
       example:
-        id: "645039f2c3f328ae90ac008a"
-        title: "producto prueba creado"
-        description: "Este es un producto prueba"
+        title: "producto prueba actualizado"
+        description: "Este es un producto prueba actualizado"
         price: 300
-        thumbnail: "11asda12312.jpg"
+        thumbnail: "11asda12312actualizado.jpg"
         code: "612312434"
         stock: 25
